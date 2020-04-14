@@ -1,5 +1,5 @@
 ---
-title: საინფორმაციო ცენტრი
+title: კეთილი იყოს თქვენი მობრძანება
 ---
 
 ![](/uploads/embeddedimage.png){: width="1600" height="642"}
