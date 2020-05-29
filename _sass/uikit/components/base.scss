@@ -279,7 +279,7 @@ video {
 @supports (display: block) {
 
    svg {
-        max-width: 42%;
+        max-width: 100%;
         height: auto;
         box-sizing: border-box;
     }
