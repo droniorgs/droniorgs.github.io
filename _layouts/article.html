@@ -93,7 +93,7 @@ layout: default
                     <div class="uk-position-relative">
                         <div class="divider-left">
                             <ul class="uk-nav uk-nav-default" data-uk-nav{% if site.article.nav_multiple %}="multiple: true"{% endif %}>
-                                <li class="uk-nav-header">{{ site.data.translation[site.lang].article_categories | default: "Categories" }}</li>
+                                <li class="uk-nav-header">{{ site.data.translation[site.lang].article_categories | default: "" }}</li>
                                 {% for category in site.data.articles %}
                                     {% assign current_cat = '' %}
                                     {% for item in category.articles %}
