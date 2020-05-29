@@ -1,20 +1,11 @@
 # Mobile menu navigation links
 
-- title: Home
+
+- title: მთავარი
   url: /
 
-- title: Articles
-  url: /articles/installation/
-
-- title: Faq
-  url: /faq/
-
-- title: Blog
-  url: /blog/
-
-- title: Changelog
-  url: /changelog/
-    
-- title: Contact Us
-  url: /contact/
-  button: primary
+- title: ინფორმაცია
+  url: /articles/Erasmus+%20ახალგაზრდებისთვის/
+  
+- title: დაგვიკავშირდით
+  url: / contact
