@@ -1,79 +1,118 @@
-# ----
-# Site
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: IC
-url: "infocentre.ge"
-baseurl:
-google_analytics_key:
-show_full_navigation: true
+# Site title and description
+title:              Erasmus+ ახალგაზრდებისთვის და ევროპის სოლიდარობის კორპუსი საქართველოში        
+lang:               en
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: 
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+# Site subpath, e.g. /blog
+baseurl:            ""
+
+# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+permalink:          /:title/
+
+# Site base hostname & protocol, e.g. http://example.com
+url:                "https://infocentre.ge"
+
+# Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
+logo:               
+  
+
+
+# Social icons displayed in footer
 social:
-  name: Erasmus+ ახალგაზრდებისთვის და ევროპის სოლიდარობის კორპუსი საქართველოში
-  links:
-    - https:/facebook.com/ep.georgia
+    email:
+    website:
+    facebook:       
+    flickr:
+    dribbble:
+    github:
+    googleplus:
+    instagram:      
+    linkedin:
+    pinterest:
+    twitter:        
+    vimeo:        
+    youtube:
 
-# -----
-# Build
+# Share button
+share:
+    post:           true # Display share buttons on a post page
+    article:        false # Display share buttons on an article page
+    twitter:        username # Enable by adding Twitter handle 
+    facebook:       true # Enable by setting true (Facebook handle not required)
 
-timezone: Etc/UTC
+# Default footer image settings
+footer:
+    copyright:      
 
-permalink: pretty
+# Disqus comments shortname, requires Disqus account https://disqus.com/
+disqus:
+    shortname:      # 1234
 
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# Google analytics code, get your code here https://www.google.com/analytics/
+google_analytics:
+
+# Number of posts displayed on blog page
+paginate:           6
+
+# Blog path
+paginate_path:      "/blog/:num/"
+
+# Path to post content assets directory i.e post images, pdfs etc
+uploads:            /uploads/
+
+mailchimp:
+  title:            "Get your weekly startup report"
+  form_action:      "https://pressapps.us8.list-manage.com/subscribe/post?u=2e56c123105fcd37e5dab02bd&amp;id=e6e945b784"
+  hidden_name:      "b_2e56c123105fcd37e5dab02bd_e6e945b784"
+
+post:
+  mailchimp: true
+
+article:
+  search:             true
+  cta:
+    text:           "გსურს მეტი ინფორმაციის მიღება?"
+    button_text:    "დაგვიკავშირდი"
+    button_url:     https://facebook.com/ep.georgia
+
+# Build settings
+markdown:           kramdown
+highlighter:        rouge
+
+gems:
   - jekyll-feed
-
+  - jekyll-seo-tag
+  - jekyll-gist
 exclude:
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - LICENCE
+  - node_modules
+
+sass:
+  style:            compressed
 
 collections:
-  docs:
-    title: Documentation
-    permalink: /:path/
-    output: true
-
+  articles:
+    output:         true
+  faqs:
+    output:         false
+    
+# Defaults
 defaults:
-  -
-    scope:
-      path: ""
+  # _posts
+  - scope:
+      path:         ""
+      type:         posts
     values:
-      layout: default
-  -
-    scope:
-      path: ""
-      type: "docs"
+      layout:       post
+  # _articles
+  - scope:
+      path:         ""
+      type:         articles
     values:
-      seo:
-        type: Article
-      _comments:
-        category: Group navigation links with this field
-        order: Used to sort links in the navigation
-      _options:
-        content:
-          width: 800
-          height: 2000
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      _comments:
-        type: Marks the impact of this release
-
-# -----------
-# CloudCannon
-
-types:
-  - minor
-  - major
+      layout:       article

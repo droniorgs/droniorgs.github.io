@@ -1,0 +1,10 @@
+# Navbar left menu navigation links
+left:
+
+# Navbar right menu navigation links
+right:
+  - title: მთავარი
+    url: /
+
+  - title: ინფორმაცია
+    url: /articles/Erasmus+%20ახალგაზრდებისთვის/
