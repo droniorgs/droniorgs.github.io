@@ -3,7 +3,6 @@ layout: home
 search: true
 width: small
 ---
-![](/uploads/embeddedimage.png){: width="1600" height="642"}
 {% include categories.html columns="3" title="" %}
 
 {% include cta.html 
