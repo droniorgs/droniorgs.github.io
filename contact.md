@@ -13,6 +13,6 @@ permalink: /contact/
 
 [info.georgia@salto-youth.net](mailto:info.georgia@salto-youth.net){: target="_blank"}
 
-[Facebook](facebook.com/ep.georgia){: target="_blank"}
+[Facebook](https://facebook.com/ep.georgia){: target="_blank"}
 
 მის.: კოტე მარჯანიშვილი 24, მე-6 სართული, 0102, თბილისი.
